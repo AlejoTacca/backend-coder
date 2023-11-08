@@ -1,7 +1,7 @@
 class ProductManager {
     constructor() {
       this.products = [];
-      this.nextId = 1; // Para generar IDs autoincrementables
+      this.nextId = 1;
     }
   
     addProduct(title, description, price, thumbnail, code, stock) {
@@ -47,10 +47,10 @@ class ProductManager {
   productManager.addProduct("Producto 1", "Descripción del Producto 1", 10.99, "imagen1.jpg", "P1", 50);
   productManager.addProduct("Producto 2", "Descripción del Producto 2", 15.99, "imagen2.jpg", "P2", 30);
   
-  console.log(productManager.getProducts());
+  console.log(productManager.getProducts()); // en caso de queres saber todos los productos
   
-  const product = productManager.getProductById(1);
+  const product = productManager.getProductById(1); // en caso de encontrarlo
   console.log("Producto encontrado:", product);
   
-  const nonExistentProduct = productManager.getProductById(3); // Intenta buscar un producto inexistente
+  const nonExistentProduct = productManager.getProductById(3); // en caso de que de error
   
