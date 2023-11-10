@@ -1,3 +1,5 @@
+// Ejercicio N°1 (Clases)
+
 class ProductManager {
     constructor() {
       this.products = [];
@@ -54,3 +56,7 @@ class ProductManager {
   
   const nonExistentProduct = productManager.getProductById(3); // en caso de que de error
   
+//Calculadora de Edad
+
+// Ejercicio N°2
+
